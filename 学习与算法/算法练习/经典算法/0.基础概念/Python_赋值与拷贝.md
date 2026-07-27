@@ -321,3 +321,5 @@ b = copy.deepcopy(a)
 same_object = a is b
 same_value = a == b
 ```
+
+相关：[[Python_bool与int]]（`True is 1` 为假，但 `True == 1` 为真——身份与值的经典陷阱）
