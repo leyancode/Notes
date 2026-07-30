@@ -1,7 +1,7 @@
 #course/ampp #mpi/shared-memory #mpi/rma #type/lecture #status/review
 
 > [!info] 知识图谱
-> 前置：[[07 单边通信与 RMA]] · 后续：[[T9|T9 混合编程原始稿]] · 原始导出稿：[[T8|T8 原始稿]]
+> 前置：[[07 单边通信与 RMA]] · 后续：[[09 混合编程]] · 原始导出稿：[[T8|T8 原始稿]]
 
 # 08. MPI 共享内存：同一节点上只留一份数据
 
@@ -320,7 +320,7 @@ node_comm 里三个 process，各自调用 MPI_Win_allocate_shared(size, ...)
 >
 > **答：B**。shared window 是 **communicator 级别的资源**，因此 communicator 中所有 processes 必须参与创建。
 >
-> 排除法也很快：A 错在 shared memory 根本不走网络；C 错在它的目的正是**避免**复制；D 错在 MPI process 不是线程，本讲全程没有引入线程模型（那是[[T9|下一讲混合编程]]的事）。
+> 排除法也很快：A 错在 shared memory 根本不走网络；C 错在它的目的正是**避免**复制；D 错在 MPI process 不是线程，本讲全程没有引入线程模型（那是[[09 混合编程|下一讲混合编程]]的事）。
 
 ## 一句话总结
 
@@ -350,7 +350,7 @@ MPI 共享内存解决的是 **intra-node memory duplication**：先用 `MPI_Com
 
 - 前置：[[07 单边通信与 RMA]]——shared window 是 RMA window 概念的特化，`MPI_Win_allocate_shared` 与 `MPI_Win_create` 同为 collective，本讲直接复用了 window / `disp_unit` 这套词汇
 - 前置：[[06 邻域集体通信]]——同样依赖「把 communicator 按结构切开」的思路，那里切的是拓扑邻居，这里切的是物理节点
-- 后续：[[T9|T9 混合编程]]——共享内存是 MPI 内部解决 node 内数据共享的方案，混合编程 MPI + OpenMP 则是换用线程模型来解决同一个问题，两者是竞争关系
+- 后续：[[09 混合编程]]——共享内存是 MPI 内部解决 node 内数据共享的方案，混合编程 MPI + OpenMP 则是换用线程模型来解决同一个问题，两者是竞争关系
 - 原始导出稿：[[T8|T8 原始稿]]
 
 ## 考点归纳
