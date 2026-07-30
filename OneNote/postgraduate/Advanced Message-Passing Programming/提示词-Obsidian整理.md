@@ -185,7 +185,7 @@ mermaid 语法注意：
 | 06Q | `T6 q.md` | 课堂测验问答题，中英双语 | `06Q 邻域集体通信习题.md` | 待整理 |
 | 07 | `T7.md` | 单边通信与 RMA | `07 单边通信与 RMA.md` | ✅ 已完成 |
 | 07P | `ex.md`<br>`User.md` | Ex1–Ex5 三进程 RMA 流水线代码题解 + 考前手册 | `07P RMA 编程练习.md` | 待整理 |
-| 08 | `T8.md` | MPI 共享内存 MPI Shared Memory | `08 MPI 共享内存.md` | 待整理 |
+| 08 | `T8.md` | MPI 共享内存 MPI Shared Memory | `08 MPI 共享内存.md` | ✅ 已完成 |
 | 09 | `T9.md` | 混合编程 Hybrid Programming（MPI + OpenMP） | `09 混合编程.md` | 待整理 |
 | 10 | `T10 Persistent Communication.md` | 持久化通信 Persistent Communication | `10 持久化通信.md` | 待整理 |
 | 11 | `T11 Parallel IO.md` | 并行 IO Parallel IO | `11 并行 IO.md` | 待整理 |
