@@ -180,7 +180,7 @@ mermaid 语法注意：
 | 04 | `W4.md` | 高级集体通信 Advanced Collective Operations | `04 高级集体通信.md` | 待整理 |
 | 05 | `W5.md` | 高级虚拟拓扑 Advanced Virtual Topologies | `05 高级虚拟拓扑.md` | 待整理 |
 | 05P | `W5-p.md` | 同上实验 | `05P 虚拟拓扑实验.md` | 待整理 |
-| 06 | `T 6.md` | 邻域集体通信 Neighbourhood Collective Operations | `06 邻域集体通信.md` | 待整理 |
+| 06 | `T 6.md` | 邻域集体通信 Neighbourhood Collective Operations | `06 邻域集体通信.md` | ✅ 已完成 |
 | 06P | `T 6 p.md` | 实验：邻域集体通信 **+ 持久化通信** | `06P 邻域集体通信实验.md` | 待整理 |
 | 06Q | `T6 q.md` | 课堂测验问答题，中英双语 | `06Q 邻域集体通信习题.md` | 待整理 |
 | 07 | `T7.md` | 单边通信与 RMA | `07 单边通信与 RMA.md` | ✅ 已完成 |
