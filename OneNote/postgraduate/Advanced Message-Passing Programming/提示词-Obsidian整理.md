@@ -168,19 +168,32 @@ mermaid 语法注意：
 
 ## 已完成 / 待整理
 
-| 讲次 | 源文件 | 主题 | 状态 |
-| --- | --- | --- | --- |
-| 01 | `W1-Introduction.md` `W1-MPI tools.md` | 课程导论 / MPI 工具 | 待整理 |
-| 02 | `W2.md` `W2-p.md` | — | 待整理 |
-| 03 | `W3.md` `W3-p.md` | 派生数据类型 | 待整理 |
-| 04 | `W4.md` | — | 待整理 |
-| 05 | `W5.md` `W5-p.md` | — | 待整理 |
-| 06 | `T 6.md` `T 6 p.md` `T6 q.md` | 邻域集体通信 | 待整理 |
-| 07 | `T7.md` | 单边通信与 RMA | ✅ 已完成 |
-| 08 | `T8.md` | MPI 共享内存 | 待整理 |
-| 09 | `T9.md` | — | 待整理 |
-| 10 | `T10 Persistent Communication.md` | 持久化通信 | 待整理 |
-| 11 | `T11 Parallel IO.md` | 并行 IO | 待整理 |
-| — | `ex.md` `User.md` | 用途待确认 | 待确认 |
+编号已核对：`W1`–`W5` 与 `T6`–`T11` 是同一条讲次序列的两种命名（W5 是 2/6，T6 是 2/14，时间上连续），因此 `01`–`11` 连续编号成立。
 
-建议顺序：先 `T 6`（T7 的前置，做完两讲之间的链接才能真正连起来），再 `T8`，然后回头补 `W1`–`W5`。每整理完一讲，回头补前一讲的 `## 知识图谱` 链接。
+| 编号 | 源文件 | 主题 | 目标文件名 | 状态 |
+| --- | --- | --- | --- | --- |
+| 01 | `W1-Introduction.md`<br>`W1-MPI tools.md` | 课程导论 + MPI 工具 | `01 课程导论与 MPI 工具.md` | 待整理 |
+| 02 | `W2.md` | 高级派生数据类型 Advanced Derived Datatypes | `02 高级派生数据类型.md` | 待整理 |
+| 02P | `W2-p.md` | 同上实验 | `02P 派生数据类型实验.md` | 待整理 |
+| 03 | `W3.md` | 用户自定义归约算子 User-defined reduction operators | `03 用户自定义归约算子.md` | 待整理 |
+| 03P | `W3-p.md` | 同上实验 | `03P 自定义归约实验.md` | 待整理 |
+| 04 | `W4.md` | 高级集体通信 Advanced Collective Operations | `04 高级集体通信.md` | 待整理 |
+| 05 | `W5.md` | 高级虚拟拓扑 Advanced Virtual Topologies | `05 高级虚拟拓扑.md` | 待整理 |
+| 05P | `W5-p.md` | 同上实验 | `05P 虚拟拓扑实验.md` | 待整理 |
+| 06 | `T 6.md` | 邻域集体通信 Neighbourhood Collective Operations | `06 邻域集体通信.md` | 待整理 |
+| 06P | `T 6 p.md` | 实验：邻域集体通信 **+ 持久化通信** | `06P 邻域集体通信实验.md` | 待整理 |
+| 06Q | `T6 q.md` | 课堂测验问答题，中英双语 | `06Q 邻域集体通信习题.md` | 待整理 |
+| 07 | `T7.md` | 单边通信与 RMA | `07 单边通信与 RMA.md` | ✅ 已完成 |
+| 07P | `ex.md`<br>`User.md` | Ex1–Ex5 三进程 RMA 流水线代码题解 + 考前手册 | `07P RMA 编程练习.md` | 待整理 |
+| 08 | `T8.md` | MPI 共享内存 MPI Shared Memory | `08 MPI 共享内存.md` | 待整理 |
+| 09 | `T9.md` | 混合编程 Hybrid Programming（MPI + OpenMP） | `09 混合编程.md` | 待整理 |
+| 10 | `T10 Persistent Communication.md` | 持久化通信 Persistent Communication | `10 持久化通信.md` | 待整理 |
+| 11 | `T11 Parallel IO.md` | 并行 IO Parallel IO | `11 并行 IO.md` | 待整理 |
+
+三条整理时需要注意的例外：
+
+- **`T 6 p.md` 横跨两讲**：标题是「Neighbourhood collective operations **and persistent communication requests**」，且作者是 Ludovic Capelli、日期 2024 年 2 月（往年的 practical）。持久化通信那部分属于 10，整理时拆开，在 `06P` 和 `10` 里各放一半并互相链接。
+- **`ex.md` 与 `User.md` 讲的是同一个程序**：一个三进程 RMA 流水线（rank 0 自增、rank 1 搬运、rank 2 打印，`MPI_Win_fence` 切 epoch，10 次迭代）。`User.md` 是它的考前速读手册。合并成一篇 `07P`，不要写成两篇。
+- **`W3` 与 `W4` 同为 1 月 30 日**：两讲同一天，W 编号未必等于授课先后。若课件里有明确顺序以课件为准，编号可对调。
+
+建议顺序：先 `T 6`（07 的前置，做完两讲之间的链接才能真正连起来），再 `T8`、`T9`，然后回头补 `W1`–`W5`，最后做 `ex.md` + `User.md` 合并成的 `07P`。每整理完一讲，回头补相邻讲次的 `## 知识图谱` 链接。
