@@ -1,7 +1,7 @@
 ```code
 #!/usr/bin/env bash
 
-#SBATCH --account=m25oc-s2795693
+#SBATCH --account=xxxxxx
 
 #SBATCH --partition=standard
 
