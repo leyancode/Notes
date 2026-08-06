@@ -130,7 +130,7 @@
 | --- | --- | --- |
 | 判断存在性 / 去重 | `set` | $O(1)$ 查找，一步去重 |
 | 需要计数 / 键值映射 | `dict` | `set` 只有键没有值，见 [[Python_dict]] |
-| 需要保序、可索引 | `list` | `set` 无序、不能下标访问，见 [[python容器创建与操作选择]] |
+| 需要保序、可索引 | `list` | `set` 无序、不能下标访问，见 [[pythonList、Tuple、Dict容器创建与操作选择]] |
 | 保序去重 | `dict.fromkeys` | `set` 去重会丢顺序 |
 
 ---
@@ -180,6 +180,6 @@ for x in data:
     seen.add(x)
 ```
 
-- 相关容器：[[Python_dict]] · [[python容器创建与操作选择]]
+- 相关容器：[[Python_dict]] · [[pythonList、Tuple、Dict容器创建与操作选择]]
 - 应用专题：[[6.3 排列型回溯]] · [[4.1 快慢指针，环形链表]]
 - 相关概念：[[状态恢复]]
