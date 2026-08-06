@@ -2,7 +2,7 @@
 
 > [!info] 知识图谱
 > 研究对象：PETSc OpenMP backend 与 MPI-only 在 ARCHER2 上的强扩展表现  
-> 论文材料：[[../04_synthesis_zh_mixed|综合稿]] · [[10 讨论速查|导师讨论速查]]
+> 论文材料：[[../04_synthesis_zh_mixed|综合稿]] · 
 
 # PETSc-ARCHER2 性能研究知识图谱
 
